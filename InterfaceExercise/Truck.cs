@@ -23,8 +23,26 @@ namespace InterfaceExercise
         {
             return "Go off road";
         }
-        
+
+
+        public void DisplayTruck()
+        {
+            Console.WriteLine($" This {Make},{Model} truck has {Windows} new windows. It is {HasSnorkel} that Snorkel is operative.");
+        }
+
+
+
+
+
 
 
     }
+        
+   
+
+
+
 }
+
+
+

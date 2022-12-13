@@ -19,6 +19,31 @@ namespace InterfaceExercise
         public string Logo { get; set; }
         public bool Warranty { get; set; }
 
+        public SUV()
+        {
+            
+        }
+
+        public SUV(int mPG, bool hasV8, string model, string make, int tires, double totalMiles, bool hasFuel, int windows, string logo, bool warranty)
+        {
+            MPG = mPG;
+            HasV8 = hasV8;
+            Model = model;
+            Make = make;
+            Tires = tires;
+            TotalMiles = totalMiles;
+            HasFuel = hasFuel;
+            Windows = windows;
+            Logo = logo;
+            Warranty = warranty;
+        }
+
+        public void DisplaySUVInformation()
+        {
+            Console.WriteLine($" This {Make}, {Model} SUV has {Tires} new tires. {HasV8} that it has v8 and gets {MPG} MPG." );
+        }
+
+
         public int MilesPerGallon ()
         {
             return MPG;

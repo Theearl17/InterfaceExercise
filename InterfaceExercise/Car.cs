@@ -39,6 +39,14 @@ namespace InterfaceExercise
             Warranty = warranty;
         }
 
+        public void DisplayCar()
+        {
+            Console.WriteLine($" The {Make},{Model} gets {MPG} mpg. The logo is {Logo}, and it has {TotalMiles} miles. {Warranty} warranty is present. "); 
+  
+        }
+
+
+
         public string GoFast()
         {
             return "Vroom";
